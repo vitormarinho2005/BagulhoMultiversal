@@ -1,0 +1,122 @@
+.dark {
+    background: navy;
+}
+
+.dark .navmain {
+    background-color: navy;
+    border-bottom: 0 0 0;
+}
+
+.dark .navlist ul li a,
+.dark .navlist ul li a i {
+    color: yellow;
+}
+
+.dark .navlist ul li a:hover,
+.dark .navlist ul li a:hover i {
+    color: gold;
+}
+
+.dark .searchbar i {
+    color: navy;
+    background-color: gold;
+}
+
+.dark .searchbar i:hover {
+    color: gold;
+}
+
+.dark #searchinput {
+    color: yellow;
+    background-color: midnightblue;
+    border-radius: 1px;
+}
+
+.dark #searchinput::-webkit-input-placeholder {
+    color: gold;
+}
+
+.dark .trendingsec {
+    background-color: navy;
+}
+
+.dark .text_change {
+    color: gold;
+}
+
+.dark .text_change:hover {
+    color: yellow;
+}
+
+.dark .leftrightchange i {
+    color: navy;
+    background-color: gold;
+}
+
+.dark .leftrightchange i:hover {
+    color: yellow;
+}
+
+.dark .headerpostsec {
+    color: yellow;
+    background-color: mediumblue;
+}
+
+.dark .moviesnews,
+.dark .reviewsec,
+.dark .latestpostsec {
+    background-color: mediumblue;
+    color: gold;
+}
+
+.dark .npostinfo h2 {
+    color: gold;
+}
+
+.dark .socialsec,
+.dark .popularsec {
+    background-color: mediumblue;
+    color: gold;
+}
+
+.dark .postinfo h2 {
+    color: gold;
+}
+
+.dark .gadgets,
+.dark .tvseries {
+    background-color: mediumblue;
+    color: gold;
+}
+
+.dark .highlightssec,
+.dark .mailform,
+.dark .commentbox,
+.dark .categoriesbox,
+.dark .maintagsbox {
+    background-color: mediumblue;
+    color: gold;
+}
+
+.dark .mailform input {
+    background-color: gold;
+    color: mediumblue;
+    border: none;
+}
+
+.dark .comment h4 {
+    color: gold;
+}
+
+.dark .comment p {
+    color: gold;
+}
+
+.dark .categories a h3,
+.dark .categories a p{
+    color: yellow;
+}
+
+.dark .categories a:hover h3 {
+    color: gold;
+}

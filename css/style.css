@@ -1,0 +1,1262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", Arial, sans-serif;
+    transition: 0.3s all;
+}
+
+/*-------------------------------------->
+    Design da barra de rolagem inicio
+<--------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+/*-------------------------------------->
+    Design da barra de rolagem final
+<--------------------------------------*/
+
+:root {
+    --main-color: navy;
+    --main-box-shadow: 0 0 5px rgb(0, 0, 205);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*-------------------------------------->
+                CABEÇALHO
+<--------------------------------------*/
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navtop {
+    width: 100%;
+    height: 30px;
+    background: blue;
+}
+
+.navone {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: yellow;
+    justify-content: space-between;
+}
+
+.navone ul {
+    gap: 15px;
+}
+
+.navone ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navone ul li a:hover {
+    color: var(--main-color);
+}
+
+.sociallink {
+    gap: 10px;
+    font-size: 12px;
+}
+
+.sociallink i:hover {
+    color: var(--main-color);
+}
+
+/*-------------------------------------->
+            BARRA DE NAVEGAÇÃO
+<--------------------------------------*/
+
+.navmain {
+    position: relative;
+    width: 100%;
+    height: 66px;
+    background-color: yellow;
+    border-bottom: 3px solid navy;
+}
+
+.navtwo {
+    position: relative;
+    justify-self: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    gap: 25px;
+}
+
+.navlist ul {
+    gap: 20px;
+}
+
+.navlist ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: blue;
+    transition: 0.3s;
+    letter-spacing: 0;
+}
+
+.navlist ul li a i {
+    font-size: 12px;
+    color: yellow;
+}
+
+.navlist ul li a:hover,
+.navlist ul li a:hover i {
+    color: var(--main-color);
+}
+
+.navsearch {
+    margin-left: auto;
+    gap: 20px;
+}
+
+.checkboxdarkmode input[type="checkbox"] {
+    margin-left: auto;
+    background-image: -webkit-linear-gradient(hsla(0, 0%, 0%, .1), hsla(0, 0%, 100%, 0.1)), -webkit-linear-gradient(left, var(--main-color) 50%, dodgerblue 50%);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 15px 0;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 4px hsla(0, 0%, 0%, .5),
+        inset 0 0 10px hsla(0, 0%, 0%, .5),
+        0 0 0 1px hsla(0, 0%, 0%, .1),
+        0 -1px 2px 2px hsla(0, 0%, 0%, .25),
+        0 2px 2px 2px hsla(0, 0%, 0%, .75);
+    cursor: pointer;
+    height: 18px;
+    padding-right: 25px;
+    width: 55px;
+    appearance: none;
+    transition: 0.25s;
+}
+
+.checkboxdarkmode input[type="checkbox"]:after {
+    content: '';
+    background-color: white;
+    width: 30px;
+    height: 18px;
+    display: block;
+    background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0.1));
+    border-radius: 25px;
+}
+
+.checkboxdarkmode input[type="checkbox"]:checked {
+    background-position: 0 0, 35px 0;
+    padding-left: 25px;
+    margin-right: 0;
+}
+
+.darkmode {
+    margin-top: 5px;
+}
+
+.searchbar i {
+    font-size: 16px;
+    font-weight: 800;
+    padding: 10px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.searchbar i:hover {
+    color: yellow;
+}
+
+#searchinput {
+    color: yellow;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+    display: none;
+}
+
+#removesearch {
+    position: absolute;
+    left: auto;
+    top: 15px;
+    z-index: 9;
+}
+
+/*-------------------------------------->
+            Seção principal 
+<--------------------------------------*/
+
+main {
+    width: 100%;
+    height: auto;
+
+}
+
+/*-------------------------------------->
+            Notificação
+<--------------------------------------*/
+
+.trendingsec {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 3px;
+    padding: 10px 15px 10px 30px;
+    justify-content: space-between;
+}
+
+.trending-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    color: yellow;
+    padding: 0 6px 0 12px;
+}
+
+.trending-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: gold;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.trending-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .8;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
+
+.trending-title h3 {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.trending-title h3 i {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.texto {
+    color: yellow;
+}
+
+.leftrightchange button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.leftrightchange button i {
+    padding: 8px;
+    background-color: blue;
+    font-size: 13px;
+    border-radius: 2px;
+    color: yellow;
+    cursor: pointer;
+}
+
+/*-------------------------------------->
+       Post de seção de Cabeçalho
+<--------------------------------------*/
+
+.headerpostsec {
+    position: relative;
+    width: 100%;
+    height: 452px;
+    background-color: yellow;
+    border-radius: 3px;
+    padding: 20px;
+    border-bottom: 3px solid blue;
+}
+
+.hposts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+}
+
+.bigpost {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.bigpost img {
+    width: 100%;
+    height: 50;
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.bigpost::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.85));
+    backface-visibility: hidden;
+    z-index: 2;
+    opacity: 1;
+    margin: 0;
+    transition: opacity .25s ease;
+}
+
+.bigpost:hover img {
+    transform: scale(1.05);
+}
+
+.postinfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 2;
+}
+
+.label {
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 3px 8px;
+    height: 17px;
+    color: yellow;
+    border-radius: 3px;
+}
+
+.postinfo h2 {
+    font-size: 25px;
+    color: white;
+    margin: 12px 0;
+    text-transform: capitalize;
+}
+
+.postinfo p {
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.postinfo p span {
+    color: whitesmoke;
+}
+
+.gridpost {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    overflow: hidden;
+}
+
+.gpost {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gpost::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.85));
+    backface-visibility: hidden;
+    z-index: 2;
+    opacity: 1;
+    margin: 0;
+    transition: opacity .25s ease;
+}
+
+.gpost:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.gpost img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.gpost:hover img {
+    transform: scale(1.08);
+}
+
+.gpost h2 {
+    font-size: 16px;
+}
+
+/*-------------------------------------->
+     Post de seção no lado esquerdo
+<--------------------------------------*/
+
+.allmainpostsec {
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftsidesec {
+    position: relative;
+    width: calc(100% - 345px);
+    height: 100%;
+}
+
+.moviesnews,
+.reviewsec,
+.latestpostsec {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    padding: 20px;
+    border-bottom: 3px solid navy;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.wtitle {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    border-bottom: 3px solid navy;
+}
+
+.wtitle h3 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+    list-style: 1;
+    margin: 0;
+}
+
+.wtitle h3::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: blue;
+    margin: 0;
+}
+
+.wtitle a {
+    font-size: 13px;
+    height: 30px;
+    color: blue;
+    list-style: 1;
+}
+
+.wtitle a:hover {
+    color: var(--main-color);
+}
+
+.wposts {
+    position: relative;
+    width: 100%;
+    height: 368px;
+    overflow: hidden;
+    margin: 18px 0;
+    margin-bottom: 0;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.wpost {
+    position: relative;
+    display: block;
+    width: calc(100% - 25%);
+    height: 100%;
+    overflow: hidden;
+}
+
+.wpost img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wfourposts {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.npost {
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+.npost::before {
+    background-image: none;
+}
+
+.npost img {
+    width: 110px;
+    height: 100%;
+}
+
+.npostinfo {
+    position: relative;
+    text-align: left;
+}
+
+.npostinfo span {
+    display: none;
+}
+
+.npostinfo h2 {
+    color: blue;
+    font-size: 12px;
+    margin-top: -1px;
+}
+
+.npostinfo p {
+    color: navy;
+}
+
+.npost:hover .npostinfo h2 {
+    color: var(--main-color);
+}
+
+.reviewposts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.revpost {
+    width: 220px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.revpostimg {
+    position: relative;
+    overflow: hidden;
+}
+
+.revpostimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.revpostimg .label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    height: auto;
+}
+
+.revpost::before {
+    display: none;
+}
+
+.revpostinfo {
+    position: relative;
+    color: yellow;
+    padding: 0;
+}
+
+.revpostinfo h2 {
+    color: blue;
+}
+
+.revpostinfo p {
+    color: navy;
+}
+
+.gadlap {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gadgets,
+.tvseries {
+    width: 48%;
+    height: auto;
+    background-color: yellow;
+    padding: 20px;
+    border-bottom: 3px solid navy;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.gadposts,
+.hqsposts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 22px;
+}
+
+.gadposts a,
+.hqsposts a {
+    margin: 0;
+}
+
+.ppost {
+    overflow: visible;
+}
+
+.ppostinfo h2 {
+    font-size: 12px;
+    margin-top: -1px;
+}
+
+.latestposts {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.latestdata {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.latepost {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.latepost::before {
+    display: none;
+}
+
+.latepost .latepostimg {
+    position: relative;
+    width: 70%;
+    height: 170px;
+    overflow: hidden;
+}
+
+.latepost .latepostimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.latepost .latepostimg .label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    height: auto;
+}
+
+.latepost h2 {
+    font-size: 23px;
+    margin: 0;
+}
+
+.latepost h5 {
+    color: blue;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.latepost .postinfo {
+    padding: 5px 20px;
+}
+
+.loadmorelatest {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: blue;
+    border: 3px solid navy;
+    padding: 5px;
+    border-radius: 5px;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.loadmorelatest i {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.loadmorelatest:hover {
+    background-color: var(--main-color);
+    color: gold;
+}
+
+/*-------------------------------------->
+     Post de seção no lado direito
+<--------------------------------------*/
+
+.rightsidesec {
+    position: sticky;
+    top: 0;
+    width: 320px;
+    height: 100%;
+}
+
+.socialsec {
+    width: 100%;
+    height: 170px;
+    background-color: yellow;
+    border-bottom: 3px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.socialbtns {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.socibtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    height: 40px;
+    padding: 10px 0;
+    padding-right: 10px;
+    font-size: 15px;
+    color: yellow;
+    font-weight: 600;
+    border: none;
+    margin: 5px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.socibtn i {
+    font-size: 20px;
+    color: yellow;
+    padding: 10px;
+    background-color: blue;
+}
+
+.socialbtns a:nth-child(1) .socibtn {
+    background-color: blue;
+}
+
+.socialbtns a:nth-child(2) .socibtn {
+    background-color: blue;
+}
+
+.socialbtns a:nth-child(3) .socibtn {
+    background-color: blue;
+}
+
+.socialbtns a:nth-child(4) .socibtn {
+    background-color: blue;
+}
+
+.popularsec {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid navy;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.bpopupost {
+    display: block;
+    width: 100%;
+    height: 185px;
+    margin: 15px 0;
+}
+
+.bpopupost img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.popuposts {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ppost {
+    overflow: visible;
+}
+
+.ppostinfo h2 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.highlightssec {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid navy;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.highlightposts {
+    align-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.higpost {
+    display: block;
+    width: 128px;
+    overflow: hidden;
+}
+
+.higpost img {
+    height: 90px;
+}
+
+.higpost h2 {
+    font-size: 13px;
+}
+
+.higpost .label {
+    font-size: 10px;
+}
+
+.higpost p {
+    color: blue;
+}
+
+.mailform {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid blue;
+    padding: 20px;
+    margin: 30px 0;
+    border-top: 3px solid blue;
+    overflow: hidden;
+}
+
+.mailform::before {
+    content: '';
+}
+
+.mailform h2 {
+    font-size: 18px;
+}
+
+.mailform p {
+    font-size: 14px;
+    margin: 15px 0;
+    color: blue;
+}
+
+.mailform form {
+    width: 100%;
+    height: 100%;
+}
+
+.mailform form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline-width: 1px;
+    outline-color: blue;
+}
+
+.mailform form button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.mailform form button:hover {
+    opacity: 1;
+}
+
+.commentbox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.comments {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comment {
+    align-items: center;
+    gap: 10px;
+}
+
+.authimg {
+    width: 90px;
+    height: 90px;
+}
+
+.authimg img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.commenter h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: blue;
+    transition: 0.2s ease;
+}
+
+.commenter p {
+    font-size: 12px;
+    color: blue;
+}
+
+.comment:hover h4 {
+    color: navy;
+}
+
+.categoriesbox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.categories a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories a h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: blue;
+}
+
+.categories a p {
+    font-size: 12px;
+    color: navy;
+}
+
+.categories a:hover h3 {
+    color: navy;
+}
+
+.maintagsbox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-bottom: 3px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.maintags {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.maintags a {
+    padding: 10px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.maintags a:hover {
+    color: gold;
+}
+
+/*-------------------------------------->
+                 Rodapé
+<--------------------------------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    color: blue;
+}
+
+.footersec {
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.firstfooter {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.fcategoriesbox,
+.flatestopsbx,
+.fpopupostbx {
+    color: blue;
+    overflow: hidden;
+    width: 30%;
+}
+
+.fcategoriesbox h3,
+.flatestopsbx h3,
+.fpopupostbx h3 {
+    font-size: 16px;
+}
+
+.fcategories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fcategories a {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+}
+
+.fcategories h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fmaintagsbx {
+    margin-top: 40px;
+}
+
+.footerlatestposts {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.footerlatestposts h2 {
+    font-size: 12px;
+    color: blue;
+    margin-top: 0;
+}
+
+.footerlatestposts .gpost {
+    align-items: flex-start;
+}
+
+.footerlatestposts .postinfo {
+    padding: 0 10px;
+}
+
+.secondfooter {
+    margin-top: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fsocialicons .sociallink i {
+    font-size: 18px;
+}
+
+.fsocialicons .sociallink a {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fsocialicons .sociallink a:hover i {
+    color: gold;
+}
+
+.fsocialicons .sociallink a:nth-child(1):hover {
+    background-color: navy;
+}
+
+.fsocialicons .sociallink a:nth-child(2):hover {
+    background-color: navy;
+}
+
+.fsocialicons .sociallink a:nth-child(3):hover {
+    background-color: navy;
+}
+
+.fsocialicons .sociallink a:nth-child(4):hover {
+    background-color: navy;
+}
+
+.thirdfooter {
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.themeauthor h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.themeauthor h3:hover {
+    color: navy;
+}
+
+.fnav {
+    gap: 20px;
+}
+
+.fnav li a {
+    font-size: 15px;
+}
+
+.fnav li a:hover {
+    color: navy;
+}
+
+/*-------------------------------------->
+          Botão voltar ao topo 
+            com rolagem suave
+<--------------------------------------*/
+
+.backtotop {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: blue;
+    padding: 11px 13px;
+    color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+

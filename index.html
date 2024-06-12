@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | BM</title>
+    <!--- fonte JS abaixo --->
+    <script src="js/login-senha.js" defer></script>
+    <!--- Link CSS abaixo --->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--- Favicon abaixo --->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/png+xml">
+    <!--- Icones ultizado --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--- Fonte ultizado --->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login_content">
+            <img src="imagens/logo bm bg.jpg" alt="login image" class="login_img">
+
+            <form action="" class="login_form">
+                <div>
+                    <h1 class="login_title">
+                        <span>Bem-vindo,</span> Você é novo por aqui!
+                    </h1>
+                    <p class="login_description">
+                        Coloque login para continuar.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="login_inputs">
+                        <div>
+                            <label for="" class="login_label">Usuário</label>
+                            <input type="user" placeholder="Insira seu nome" required class="login_input">
+                        </div>
+                        <div>
+                            <label for="" class="login_label">Senha</label>
+
+                            <div class="login_box">
+                               <input type="password" placeholder="Insira sua senha" required class="login_input" id="input-pass"> 
+                               <i class="fa-regular fa-eye-slash login_eye" id="input-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="login_check">
+                        <input type="checkbox" class="login_check-input">
+                        <label for="" class="login_check-label">Lembrar-me</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="login_buttons">
+                        <button class="login_button">Conecte-se</button>
+                        <button class="login_button login_button-ghost">Inscrever-se</button>
+                    </div>
+
+                    <a href="pag.html" class="login_forgot">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

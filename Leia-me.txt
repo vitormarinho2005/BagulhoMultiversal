@@ -1,0 +1,32 @@
+=============== ATENÇÃO ===============
+
+O meu projeto que envolve sobre a cultura pop, é:
+
+- Site principal (e não-oficial) do BagulhoMultiversal 
+(e sim, eu tenho um canal do Youtube sobre a cultura pop, se quiser, pode me inscrever-lá, você vai adorar esse conteúdo, ok?)
+
+Alguns erros não solucionados abaixo:
+
+- Alinhamento 'horroroso' na parte 'Teorias'
+- Imagem bugada com tamanho 'estranho' na parte 'Comentários'
+
+OBS: O meu projeto foi inspirado de tutorial de um gringo (estrangeiro) 
+e eu pedi uma 'ajudinha' no YouTube, pra dar uma melhorada no HTML, CSS e JavaScript.
+
+Então, os arquivos do meu projeto estarão no AVA (Ambiente Virtual de Aprendizagem) 
+na entrega parcial (temporário, provavelmente até final de junho), mas se vocês quiserem explorar
+os arquivos do meu projeto, fique á vontade.
+
+Boa sorte.
+
+Ass: Vitor Marinho.
+
+======================================
+
+
+
+
+
+
+
+
